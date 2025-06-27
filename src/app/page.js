@@ -264,17 +264,29 @@ export default function DashboardPage() {
 
                     {/*Grafico de Torta*/}
                     <div className="dashboard-card">
-                    <TarjetaGiratoria
-                        infoAdicional="El 80% de los encuestados no conoce el nombre del humedal. Haz clic para ver el grafico."
+                     <TarjetaGiratoria
+                      infoAdicional="🌿 ¿Conoces el Humedal El Bosque?
+
+ Muchos estudiantes lo ven todos los días al pasar por el Campus Miraflores de la UACh, pero pocos saben cómo se llama o cuán valioso es. Este humedal alberga una rica diversidad de flora y fauna, y forma parte del paisaje cotidiano.
+
+🚰 Sabías que forma parte de una red de humedales urbanos que incluye los sectores Bosque–Miraflores–Las Mulatas–Guacamayo y que fue declarada área protegida en 202, protegiendo aproximadamente 387 hectáreas.😲
+Cumple funciones clave como filtrar el agua, absorber carbono y ser refugio de biodiversidad local.🐸
+
+📊 Mira este gráfico y descubre cuántas personas aún no lo conocen.⬇️
+
+ ¡Ayúdanos a difundir su nombre y su importancia para que más gente lo valore y lo cuide!"
+                      fotos={[
+                        "fotos/foto1.png"                    
+                      ]}
                     >
-                       <div className="nombres-y-top5">
-                          <div className="grafico-nombres">
-                            <GraficoNombres data={nombresSiNo} />
-                          </div>
-                          <div className="tabla-top5">
-                            <GraficoTop5 data={top5} />
-                          </div>
+                      <div className="nombres-y-top5">
+                        <div className="grafico-nombres">
+                          <GraficoNombres data={nombresSiNo} />
                         </div>
+                        <div className="tabla-top5">
+                          <GraficoTop5 data={top5} />
+                        </div>
+                      </div>
                     </TarjetaGiratoria>
                     </div>
                 
